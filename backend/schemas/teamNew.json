@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://upInSports.teams.com/teamNew.schema.json",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 30
+      },
+      "nickname": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 25 
+      },
+      "code": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 20
+      },
+      "city": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 30
+      },
+      "logo": {
+        "type": "string",
+        "format": "uri"        
+      },
+      "nbaFranchise": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "name",
+      "city"
+    ]
+  }
+  
